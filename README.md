@@ -2,10 +2,10 @@
 
 1° Abra o terminal na raiz do projeto, rode um "npm install" ou "yarn install", dependendo do seu gerenciador de pacotes;
 
-1° Crie um arquivo ".env" na raiz do projeto;
+2° Crie um arquivo ".env" na raiz do projeto;
 
-2° Copie o que tem no ".env.example" e cole nele;
+3° Copie o que tem no ".env.example" e cole nele;
 
-3° Rode em um terminal o comando "npm dev" ou "yarn dev";
+4° Rode em um terminal o comando "npm dev" ou "yarn dev";
 
-3° Abra outro terminal, com o do passo acima rodando e rode no terminal o comando "npm test" ou "yarn test";
+5° Abra outro terminal, com o do passo acima rodando e rode no terminal o comando "npm test" ou "yarn test";
