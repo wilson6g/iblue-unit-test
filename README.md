@@ -1,6 +1,6 @@
 ## Passo a passo de como rodar os testes:
 
-1° Abra o terminal na raiz do projeto, rode um "npm install" ou "yarn install", dependendo do seu gerenciador de projetos;
+1° Abra o terminal na raiz do projeto, rode um "npm install" ou "yarn install", dependendo do seu gerenciador de pacotes;
 
 1° Crie um arquivo ".env" na raiz do projeto;
 
