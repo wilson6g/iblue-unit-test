@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --inspect source/server.js",
-    "test": "mocha 'source/test/**/*.js'"
+    "test": "mocha --timeout 2000 'source/test/**/*.js'"
   },
   "dependencies": {
     "chai": "^4.3.6",

@@ -26,7 +26,7 @@ describe('Test DIVISION API', () => {
         done();
       })
   },
-    it('should type error', (done) => {
+    it('should type error when sum with letters and/or symbols', (done) => {
 
       let numbers = {
         "numbers": ["a", "@", "#", "d"]
@@ -44,7 +44,25 @@ describe('Test DIVISION API', () => {
           done();
         })
     },
-    ));
+    ),
+    it('should be error when sum with empty value', (done) => {
+
+      let numbers = {
+        "numbers": ["", "1", "2", "3"]
+      }
+
+      chai.request('localhost:' + process.env.NODE_PORT)
+        .post('/api/multiply')
+        .type('json')
+        .send(numbers)
+        .end((error, response) => {
+          if (error) {
+            done(error);
+          }
+          chai.expect(response).to.have.status(422);
+          done();
+        })
+    }));
 });
 
 
