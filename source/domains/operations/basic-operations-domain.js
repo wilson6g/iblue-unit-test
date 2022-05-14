@@ -2,7 +2,7 @@ const sum = (request, response) => {
   const { numbers } = request.body;
 
   const sumResult = numbers.reduce(function (sumTotal, number) {
-    return sumTotal + number;
+    return parseFloat(sumTotal) + parseFloat(number);
   });
 
   return sumResult;
@@ -12,7 +12,7 @@ const multiply = (request, response) => {
   const { numbers } = request.body;
 
   const multiplyResult = numbers.reduce(function (multiplyTotal, number) {
-    return multiplyTotal * number;
+    return parseFloat(multiplyTotal) * parseFloat(number);
   });
 
   return multiplyResult;
@@ -22,7 +22,7 @@ const subtract = (request, response) => {
   const { numbers } = request.body;
 
   const subtractResult = numbers.reduce(function (subtractTotal, number) {
-    return subtractTotal - number;
+    return parseFloat(subtractTotal) - parseFloat(number);
   });
 
   return subtractResult;
@@ -30,9 +30,9 @@ const subtract = (request, response) => {
 
 const division = (request, response) => {
   const { numbers } = request.body;
-  
+
   const divisionResult = numbers.reduce(function (divisionTotal, number) {
-    return divisionTotal / number;
+    return parseFloat(divisionTotal) / parseFloat(number);
   });
 
   return divisionResult;
