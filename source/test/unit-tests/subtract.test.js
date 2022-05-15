@@ -5,7 +5,7 @@ const dotenv = require('dotenv')
 chai.use(chaiHttp);
 dotenv.config();
 
-describe('Test DIVISION API', () => {
+describe('Test SUBTRACT API', () => {
   it('should divide an array of numbers', (done) => {
 
     let numbers = {
