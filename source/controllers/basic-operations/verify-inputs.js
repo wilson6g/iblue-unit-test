@@ -14,7 +14,7 @@ const validateFieldNumberForBasicOperations = (request, response) => {
 
   const { error } = validation;
   if (error) {
-    response.status(422).json({
+    return response.status(422).json({
       message: error.details[0].message,
       data: {
         message: validation.value,

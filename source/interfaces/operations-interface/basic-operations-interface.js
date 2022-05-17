@@ -6,7 +6,7 @@ const validateFieldNumberForBasicOperations = require('../../controllers/basic-o
 basicOperationsInterface.post('/api/sum', (request, response) => {
   const isValid = validateFieldNumberForBasicOperations(request, response);
 
-  if (isValid != true) return response.status(400).json(isValid).send();
+  if (isValid != true) return isValid;
 
   const sumResult = sum(request, response);
 
@@ -16,7 +16,7 @@ basicOperationsInterface.post('/api/sum', (request, response) => {
 basicOperationsInterface.post('/api/subtract', (request, response) => {
   const isValid = validateFieldNumberForBasicOperations(request, response);
 
-  if (isValid != true) return response.status(400).json(isValid).send();
+  if (isValid != true) return isValid;
 
   const subtractResult = subtract(request, response);
 
@@ -26,7 +26,7 @@ basicOperationsInterface.post('/api/subtract', (request, response) => {
 basicOperationsInterface.post('/api/multiply', (request, response) => {
   const isValid = validateFieldNumberForBasicOperations(request, response);
 
-  if (isValid != true) return response.status(400).json(isValid).send();
+  if (isValid != true) return isValid;
 
   const multiplyResult = multiply(request, response);
 
@@ -36,7 +36,7 @@ basicOperationsInterface.post('/api/multiply', (request, response) => {
 basicOperationsInterface.post('/api/division', (request, response) => {
   const isValid = validateFieldNumberForBasicOperations(request, response);
 
-  if (isValid != true) return response.status(400).json(isValid).send();
+  if (isValid != true) return isValid;
 
   const divisionResult = division(request, response);
 
